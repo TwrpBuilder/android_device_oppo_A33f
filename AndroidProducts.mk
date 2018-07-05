@@ -14,5 +14,7 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_f1f.mk
+
+LOCAL_PATH := device/oppo/a33f/
+
+PRODUCT_MAKEFILES := $(LOCAL_PATH)/omni_a33f.mk

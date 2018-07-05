@@ -18,25 +18,27 @@
 # $(call inherit-product, device/sample/products/backup_overlay.mk)
 
 # Get the prebuilt list of APNs
-$(call inherit-product, vendor/omni/config/gsm.mk)
+#$(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Inherit from the common Open Source product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+# $(call inherit-product, vendor/omni/config/common.mk)
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 PRODUCT_PACKAGES += \
     charger_res_images \
     charger
 
-PRODUCT_NAME := omni_f1f
-PRODUCT_DEVICE := F1f
+PRODUCT_NAME := omni_a33f
+PRODUCT_DEVICE := a33f
 PRODUCT_BRAND := Oppo
-PRODUCT_MODEL := F1f
+PRODUCT_MODEL := A33f
 PRODUCT_MANUFACTURER := Oppo
 
 # Kernel inline build
-#TARGET_KERNEL_CONFIG := f1f_defconfig
-#TARGET_VARIANT_CONFIG := f1f_defconfig
-#TARGET_SELINUX_CONFIG := f1f_defconfig
+#TARGET_KERNEL_CONFIG := a33f_defconfig
+#TARGET_VARIANT_CONFIG := a33f_defconfig
+#TARGET_SELINUX_CONFIG := a33f_defconfig
