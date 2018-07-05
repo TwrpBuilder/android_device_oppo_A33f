@@ -22,18 +22,18 @@ TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 COMMON_GLOBAL_CFLAGS += -DREFRESH_RATE=60  
 
 # Architecture
-TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv8-a
-TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_ABI2 :=
-TARGET_CPU_VARIANT := generic
-TARGET_CPU_SMP := true
+#TARGET_ARCH := arm64
+#TARGET_ARCH_VARIANT := armv8-a
+#TARGET_CPU_ABI := arm64-v8a
+#TARGET_CPU_ABI2 :=
+#TARGET_CPU_VARIANT := generic
+#TARGET_CPU_SMP := true
 
-TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv7-a-neon
-TARGET_2ND_CPU_ABI := armeabi-v7a
-TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := generic
+#TARGET_2ND_ARCH := arm
+#TARGET_2ND_ARCH_VARIANT := armv7-a-neon
+#TARGET_2ND_CPU_ABI := armeabi-v7a
+#TARGET_2ND_CPU_ABI2 := armeabi
+#TARGET_2ND_CPU_VARIANT := generic
 
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlyprintk ramoops.mem_address=0x9ff00000 ramoops.mem_size=0x400000 androidboot.selinux=permissive
 
@@ -51,7 +51,7 @@ TARGET_PREBUILT_KERNEL := device/oppo/a33f/kernel
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 33554432
 # BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2952790016
 # BOARD_USERDATAIMAGE_PARTITION_SIZE := 11964726272
-BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
+BOARD_FLASH_BLOCK_SIZE := 0 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -70,3 +70,4 @@ BOARD_HAS_NO_REAL_SDCARD := true
 TW_INPUT_BLACKLIST := "accelerometer"
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_IGNORE_ABS_MT_TRACKING_ID := true
+include device/generic/twrpbuilder/BoardConfig32.mk
