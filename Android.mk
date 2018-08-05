@@ -23,9 +23,9 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-ifneq ($(filter a33f,$(TARGET_DEVICE)),)
+ifneq ($(filter A33f,$(TARGET_DEVICE)),)
 
-LOCAL_PATH := device/oppo/a33f/
+LOCAL_PATH := device/oppo/A33f/
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
