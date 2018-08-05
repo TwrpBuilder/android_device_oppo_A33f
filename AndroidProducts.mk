@@ -15,6 +15,6 @@
 #
 
 
-LOCAL_PATH := device/oppo/a33f/
+LOCAL_PATH := device/oppo/A33f/
 
 PRODUCT_MAKEFILES := $(LOCAL_PATH)/omni_a33f.mk
