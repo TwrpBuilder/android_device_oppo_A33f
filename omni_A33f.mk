@@ -32,13 +32,13 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     charger
 
-PRODUCT_NAME := omni_a33f
-PRODUCT_DEVICE := a33f
+PRODUCT_NAME := omni_A33f
+PRODUCT_DEVICE := A33f
 PRODUCT_BRAND := Oppo
 PRODUCT_MODEL := A33f
 PRODUCT_MANUFACTURER := Oppo
 
 # Kernel inline build
-#TARGET_KERNEL_CONFIG := a33f_defconfig
-#TARGET_VARIANT_CONFIG := a33f_defconfig
-#TARGET_SELINUX_CONFIG := a33f_defconfig
+#TARGET_KERNEL_CONFIG := A33f_defconfig
+#TARGET_VARIANT_CONFIG := A33f_defconfig
+#TARGET_SELINUX_CONFIG := A33f_defconfig

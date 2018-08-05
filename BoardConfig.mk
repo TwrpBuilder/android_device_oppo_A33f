@@ -39,12 +39,12 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 an
 
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x80008000 --ramdisk_offset 0x81000000 --tags_offset 0x80000100 --dt device/oppo/a33f/dt.img
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x80008000 --ramdisk_offset 0x81000000 --tags_offset 0x80000100 --dt device/oppo/A33f/dt.img
 
 # prebuilt kernel
-TARGET_PREBUILT_KERNEL := device/oppo/a33f/kernel
+TARGET_PREBUILT_KERNEL := device/oppo/A33f/kernel
 # else uncomment below to build from sauce
-#TARGET_KERNEL_SOURCE := kernel/oppo/a33f
+#TARGET_KERNEL_SOURCE := kernel/oppo/A33f
 #TARGET_KERNEL_CONFIG := msm8916_defconfig
 
 # BOARD_BOOTIMAGE_PARTITION_SIZE := 25165824
